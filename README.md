@@ -1,4 +1,4 @@
-# NASA_space_apps
+# NASA Space Apps
 This is a web-app project made by team Cypher that participated in the 2023 NASA SpaceApps Challenges
 
 # Introduction:
