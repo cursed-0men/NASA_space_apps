@@ -3,31 +3,51 @@ This is a web-app project made by team Cypher that participated in the 2023 NASA
 
 # Introduction:
 The provided codebase consists of three components aimed at facilitating the assessment of weather conditions for potential rocket launches. The Python script interacts with the OpenWeatherMap API to retrieve weather data for a specified city and assesses whether the conditions are suitable for a launch. On the other hand, the HTML files serve as user interfaces for viewing weather information and launch suitability on both a textual interface and an interactive world map.
+# Modules
+Requests
+Matplotlib
+Pandas
+datetime
+time
 
 # Functions:
+1. get_weather_data(city) : 
+Fetches weather data from the OpenWeatherMap API for the specified city. 
+Returns the weather data as a JSON object or None if there is an error.
 
-get_weather_data(city)
+Parameters: city (str): The name of the city to fetch weather data for.
+Returns: Dictionary containing weather data or None in case of error.
 
-1. Description: Retrieves weather data for a specified city from the OpenWeatherMap API.
-Parameters:
-city (str): Name of the city for which weather data is requested.
-Returns:
-Weather data in JSON format if the request is successful.
-printer(weather_data)
+2.  printer(weather_data) : 
+Prints a structured report of weather conditions in a tabular format. 
+Highlights key weather attributes such as temperature, cloud cover, wind speed, weather 
+description, and lightning risk. 
+Uses color-coded output to indicate suitability.
 
-2. Description: Prints the weather data in a formatted table.
-Parameters:
-weather_data (dict): Weather data obtained from the OpenWeatherMap API.
-is_suitable_for_rocket_launch(weather_data)
+Parameters: weather_data (dict): The weather data to display.
 
-3. Description: Determines if weather conditions are suitable for a rocket launch based on the provided data.
-Parameters:
-weather_data (dict): Weather data obtained from the OpenWeatherMap API.
-Returns:
-True if conditions are suitable for a rocket launch, otherwise False.
+3. is_suitable_for_rocket_launch(weather_data)
+Determines whether the weather conditions are suitable for a rocket launch based on 
+defined criteria, including temperature range, cloud cover percentage, wind speed, and weather description.
 
-4. main()
-Description: Main function to execute the script. Prompts the user for a city name, retrieves weather data, and checks if conditions are suitable for a rocket launch.
+Parameters: weather_data (dict): The weather data to analyze.
+Returns: Boolean value indicating suitability for rocket launch.
+
+4. get_suitable_time(current_time)
+Suggests the next suitable time for a rocket launch if the current 
+conditions are not ideal. In this example, it assumes the conditions 
+may improve in 15 minutes.
+
+Parameters: current_time (datetime): The current time.
+Returns: datetime indicating the next suggested suitable time.
+
+5. 5. main()
+Main function of the program. Asks the user for a city name and fetches the current weather data. 
+It then displays the weather conditions and evaluates suitability for a rocket launch. 
+If the conditions are not ideal, it suggests the next suitable time. The user is asked if they 
+want to continue with further analysis and plotting. If agreed, the program collects weather data every 
+10sec(any time) for five iterations and plots the weather factors over time.
+
 
 # WEB PLATFORM
 HTML Code 1 :
@@ -61,14 +81,3 @@ Styling with CSS: Enhances the visual appearance and layout of the map and weath
 4> Saurav Sawant
 5> Harsh Patel
 6> Miqdad Ali
-
-
-
-
-
-
-
-
-
-
-
