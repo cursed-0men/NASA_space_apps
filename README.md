@@ -3,12 +3,13 @@ This is a web-app project made by team Cypher that participated in the 2023 NASA
 
 # Introduction:
 The provided codebase consists of three components aimed at facilitating the assessment of weather conditions for potential rocket launches. The Python script interacts with the OpenWeatherMap API to retrieve weather data for a specified city and assesses whether the conditions are suitable for a launch. On the other hand, the HTML files serve as user interfaces for viewing weather information and launch suitability on both a textual interface and an interactive world map.
+
 # Modules
-Requests
-Matplotlib
-Pandas
-datetime
-time
+1. Requests
+2. Matplotlib
+3. Pandas
+4. datetime
+5. time
 
 # Functions:
 1. get_weather_data(city) : 
