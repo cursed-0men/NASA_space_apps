@@ -1,17 +1,17 @@
-# NASA Space Apps
+# 🚀 NASA Space Apps
 This is a web-app project made by team Cypher that participated in the 2023 NASA SpaceApps Challenges
 
-# Introduction:
+## 📄 Introduction:
 The provided codebase consists of three components aimed at facilitating the assessment of weather conditions for potential rocket launches. The Python script interacts with the OpenWeatherMap API to retrieve weather data for a specified city and assesses whether the conditions are suitable for a launch. On the other hand, the HTML files serve as user interfaces for viewing weather information and launch suitability on both a textual interface and an interactive world map.
 
-# Modules
+## 🟢 Modules
 1. Requests
 2. Matplotlib
 3. Pandas
 4. datetime
 5. time
 
-# Functions:
+## 🛠️ Functions:
 1. get_weather_data(city) : 
 Fetches weather data from the OpenWeatherMap API for the specified city. 
 Returns the weather data as a JSON object or None if there is an error.
@@ -50,7 +50,7 @@ want to continue with further analysis and plotting. If agreed, the program coll
 10sec(any time) for five iterations and plots the weather factors over time.
 
 
-# WEB PLATFORM
+## 🌐 Web Platform
 HTML Code 1 :
 Purpose: The HTML code provides user interfaces for inputting a city name and displaying weather information relevant to rocket launches.
 Components:
@@ -70,12 +70,12 @@ Custom Markers: Indicates launch suitability with custom markers on the map.
 Weather Forecast Table: Presents a table with detailed weather forecast data.
 Styling with CSS: Enhances the visual appearance and layout of the map and weather information.
 
-# Resources
+## Resources
 1. OpenWeatherMap API: Provides real-time weather data for cities worldwide.
 2. Leaflet.js Library: Enables the creation of interactive and customizable maps in web applications.
 3. API Key: Required for authentication and access to OpenWeatherMap API services.
 
-# Group Members
+## 👤 Group Members
 1> Deep Sangani
 2> Dhyey Savaliya
 3> Harsh Dhimmar
