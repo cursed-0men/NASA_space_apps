@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import time
 
 
-api_key = '55d3ce7f471db6d3c8f884a9e8d6ff02'
+api_key = 'API-KEY'
 
 def get_weather_data(city):
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
